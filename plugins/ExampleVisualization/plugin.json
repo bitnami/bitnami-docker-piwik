@@ -1,0 +1,16 @@
+{
+    "name": "ExampleVisualization",
+    "version": "0.1.0",
+    "description": "Matomo Platform showcase: how to create a new custom data visualization.",
+    "theme": false,
+    "license": "GPL v3+",
+    "keywords": ["SimpleTable"],
+    "homepage": "https://matomo.org",
+    "authors": [
+        {
+            "name": "The Matomo Team",
+            "email": "hello@matomo.org",
+            "homepage": "https://matomo.org"
+        }
+    ]
+}

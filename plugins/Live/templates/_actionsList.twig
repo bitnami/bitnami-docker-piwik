@@ -1,0 +1,14 @@
+{% set previousAction = false %}
+{% for action in actionDetails %}
+
+    {{ postEvent('Live.renderAction', action, previousAction, visitInfo) }}
+
+{% set previousAction = action %}
+{% endfor %}
+
+{% if visitInfo.truncatedActionsCount is defined %}
+    <li class="more">
+        <span class="icon-info"></span>
+        {{ 'Live_MorePagesNotDisplayed'|translate }}
+    </li>
+{% endif %}
