@@ -100,7 +100,7 @@ class ThemeStyles
     /**
      * @var string
      */
-    public $colorHeaderBackground = '#3450A3';
+    public $colorHeaderBackground = '#78be20';
 
     /**
      * @var string
@@ -120,7 +120,7 @@ class ThemeStyles
     /**
      * @var string
      */
-    public $colorMenuContrastTextActive = '#3450A3';
+    public $colorMenuContrastTextActive = '#78be20';
 
     /**
      * @var string
