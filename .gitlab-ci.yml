@@ -1,0 +1,18 @@
+stages:
+  - docker-image
+
+include:
+  - project: "adeotech/lmfr/gitlab-ci-lib"
+    file: "Docker.gitlab-ci.yml"
+
+docker-image-dev:
+  extends: .docker-image
+  variables:
+    JFROG_DOCKER_URL: ${JFROG_DOCKER_DEV_URL}
+
+docker-image-release:
+  extends: .docker-image
+  variables:
+    JFROG_DOCKER_URL: ${JFROG_DOCKER_RELEASE_URL}
+  only:
+- tags
