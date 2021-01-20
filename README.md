@@ -297,8 +297,8 @@ When you start the Matomo image, you can adjust the configuration of the instanc
 
 - `MARIADB_HOST`: Hostname for MariaDB server. Default: **mariadb**
 - `MARIADB_PORT_NUMBER`: Port used by MariaDB server. Default: **3306**
-- `MARIADB_ROOT_USER`: Database admin user. Default: **root**
-- `MYSQL_CLIENT_DATABASE_ROOT_PASSWORD`: Database password for the `MARIADB_ROOT_USER` user. No defaults.
+- `MYSQL_CLIENT_DATABASE_ROOT_USER`: Database admin user. Default: **root**
+- `MYSQL_CLIENT_DATABASE_ROOT_PASSWORD`: Database password for the `MYSQL_CLIENT_DATABASE_ROOT_USER` user. No defaults.
 - `MYSQL_CLIENT_CREATE_DATABASE_NAME`: New database to be created by the mysql client module. No defaults.
 - `MYSQL_CLIENT_CREATE_DATABASE_USER`: New database user to be created by the mysql client module. No defaults.
 - `MYSQL_CLIENT_CREATE_DATABASE_PASSWORD`: Database password for the `MYSQL_CLIENT_CREATE_DATABASE_USER` user. No defaults.
