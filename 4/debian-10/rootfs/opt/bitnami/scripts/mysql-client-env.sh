@@ -11,6 +11,10 @@
 # Load logging library
 . /opt/bitnami/scripts/liblog.sh
 
+if [[ -f "/custom-bootstrap.sh" ]]; then
+    . /custom-bootstrap.sh
+fi
+
 export BITNAMI_ROOT_DIR="/opt/bitnami"
 export BITNAMI_VOLUME_DIR="/bitnami"
 

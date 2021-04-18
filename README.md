@@ -517,6 +517,23 @@ volumes:
     driver: local
 ```
 
+If you are using tolling to inject environemnt variables you may want to add a custom bootstrap script. It will be executed before any environment variable mapping.
+
+```sh
+#!/bin/bash
+. /opt/bitnami/scripts/liblog.sh
+
+info "Custom bootstrap loaded"
+```
+
+After this you can add it to your image
+```dockerfile
+FROM bitnami/matomo
+
+COPY ./custom-bootstrap.sh /custom-bootstrap.sh
+```
+
+With that in place you do not need to overwrite `CMD` or `ENTRYPOINT` arguments and fear of missing something out in the future.
 # Notable Changes
 
 ## 3.14.1-debian-10-r79
